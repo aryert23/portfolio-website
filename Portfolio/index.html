@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aryan | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Internal CSS -->
+  <style>
+    /* Inline-demo styles (will be used on elements too) */
+    .inline-highlight {
+      color: #ff6f91;
+      font-weight: 600;
+    }
+
+    /* Small extra internal tweak */
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating pastel blobs background -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <header class="top-nav">
+    <div class="logo">Aryan<span>.</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#passion">Passion</a>
+      <a href="#work">Past Work</a>
+      <a href="#social-life">Social Life</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero section -->
+  <main class="hero">
+    <!-- Left: Profile photo -->
+    <div class="hero-left">
+      <div class="profile-card">
+        <div class="profile-ring"></div>
+        <img src="profile1.jpeg"
+             alt="Profile photo" 
+             class="profile-img"
+             style="border: 3px solid rgba(255,255,255,0.8); box-shadow: 0 15px 40px rgba(0,0,0,0.25);">
+        <div class="profile-meta">
+          <span class="tag">Growth-driven learner</span>
+          <p>2nd-year IT student • Data Science & Web Dev explorer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Description / About -->
+    <section class="hero-right" id="about">
+      <p class="eyebrow">Hey, I’m Aryan 👋</p>
+      <h1>
+        Building <span class="inline-highlight">real-world solutions</span><br />
+        through code, curiosity, and patience.
+      </h1>
+      <p class="hero-desc">
+        I’m a growth-driven learner who loves turning fundamentals into real projects and real impact. 
+        I break problems down, experiment, and learn by doing instead of just memorizing.
+      </p>
+      <p class="hero-desc">
+        I’ve explored web development, data analysis, and core CS concepts, pushing myself to stay consistent 
+        even when progress feels slow. Discipline, self-improvement, and long-term thinking guide how I work and grow.
+      </p>
+      <p class="hero-desc">
+        I believe meaningful growth comes from persistence, honest self-assessment, and the willingness to rebuild 
+        when things don’t go as planned.
+      </p>
+
+      <div class="hero-cta">
+        <button class="btn primary" onclick="scrollToSection('work')">
+          View my work
+        </button>
+        <button class="btn ghost" onclick="scrollToSection('contact')">
+          Let’s connect
+        </button>
+      </div>
+
+      <div class="status-pills">
+        <span class="pill">Actively looking for internships</span>
+        <span class="pill pill-soft">IBM Data Science certified</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Content sections -->
+  <section class="grid-section" id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="grid-cards">
+      <article class="card fade-up">
+        <h3>Experimenting with side projects</h3>
+        <p>
+          I enjoy taking small ideas and turning them into mini applications, dashboards, and tools to 
+          learn new tech stacks in a playful way.
+        </p>
+      </article>
+      <article class="card fade-up">
+        <h3>Learning with data</h3>
+        <p>
+          Whether it’s exploring datasets or building quick visualizations, I like finding patterns 
+          and stories hidden inside numbers.
+        </p>
+      </article>
+      <article class="card fade-up">
+        <h3>Reading & reflection</h3>
+        <p>
+          I often read about productivity, long-term thinking, and discipline, then reflect on how to 
+          apply those ideas in my own life.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="grid-section" id="passion">
+    <h2>Passion</h2>
+    <div class="grid-cards">
+      <article class="card fade-up">
+        <h3>Building from fundamentals</h3>
+        <p>
+          I love understanding how things work at a low level, then using that knowledge to design clean, 
+          reliable systems and user experiences.
+        </p>
+      </article>
+      <article class="card fade-up">
+        <h3>Learning by doing</h3>
+        <p>
+          My favorite way to learn is to ship real projects, face bugs, iterate, and continuously improve 
+          instead of chasing shortcuts.
+        </p>
+      </article>
+      <article class="card fade-up">
+        <h3>Long-term growth</h3>
+        <p>
+          I am driven by the idea of compounding progress: small daily improvements that add up to something 
+          powerful over time.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="grid-section" id="work">
+    <h2>Past Work</h2>
+    <div class="grid-cards">
+      <article class="card fade-up">
+        <h3>Student Dashboard UI</h3>
+        <p>
+          Built a responsive student dashboard with tasks, mood tracking, and smooth UI animations using 
+          HTML, CSS, and JavaScript.
+        </p>
+        <span class="chip">Web Dev</span>
+        <span class="chip">JavaScript</span>
+      </article>
+      <article class="card fade-up">
+        <h3>Data Science Practice</h3>
+        <p>
+          Completed IBM data-science-related certifications, working on hands-on labs with data cleaning, 
+          visualization, and basic ML flows.
+        </p>
+        <span class="chip">Data Science</span>
+        <span class="chip">IBM</span>
+      </article>
+      <article class="card fade-up">
+        <h3>Problem-solving in CS</h3>
+        <p>
+          Explored core CS concepts and coding exercises, focusing on writing clear, well-structured solutions 
+          instead of only chasing speed.
+        </p>
+        <span class="chip">Core CS</span>
+        <span class="chip">DSA</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="grid-section" id="leadership">
+  <h2>Leadership & Responsibilities</h2>
+  <div class="grid-cards">
+    <article class="card fade-up">
+      <h3>Junior Deputy Secretary — Sports Council</h3>
+      <p>
+        I currently serve as the <strong>Junior Deputy Secretary</strong> of the Sports Council, where I assist
+        in planning and coordinating sports events, managing teams, and handling official communication.
+      </p>
+      <p>
+        This role has helped me develop <strong>strong public speaking, leadership, and coordination skills</strong>,
+        along with confidence in representing the council during meetings and events.
+      </p>
+      <span class="chip">Leadership</span>
+      <span class="chip">Public Speaking</span>
+      <span class="chip">Team Management</span>
+    </article>
+  </div>
+</section>
+
+
+  <section class="grid-section" id="social-life">
+    <h2>Social Life</h2>
+    <div class="grid-cards">
+      <article class="card fade-up">
+        <h3>Collaboration</h3>
+        <p>
+          I enjoy working in teams where everyone shares feedback openly, supports each other, and isn’t 
+          afraid to experiment with new ideas.
+        </p>
+      </article>
+      <article class="card fade-up">
+        <h3>Communities</h3>
+        <p>
+          I like engaging with tech and student communities, learning from peers, and contributing wherever 
+          I can add value.
+        </p>
+      </article>
+      <article class="card fade-up">
+        <h3>Offline balance</h3>
+        <p>
+          Outside screens, I value meaningful conversations, walks, and time to reset so I can come back to 
+          work with more clarity and energy.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact / footer -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <div>
+        <h2>Let’s build something</h2>
+        <p>
+          Open to internships, collaborations, and meaningful projects where learning and impact go hand in hand.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:2024.aryan.kadam@ves.ac.in" class="footer-link">
+          <span>Email</span>
+          <span>2024.aryan.kadam@ves.ac.in</span>
+        </a>
+        <a href="https://www.linkedin.com/in/aryan-kadam-546315325/" target="_blank" class="footer-link">
+          <span>LinkedIn</span>
+          <span>linkedin.com/in/aryan-kadam-546315325</span>
+        </a>
+        <a href="https://github.com/" target="_blank" class="footer-link">
+          <span>GitHub</span>
+          <span>github.com/aryert23</span>
+        </a>
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Aryan • Crafted with patience, practice, and a little bit of fun.</p>
+    </div>
+  </footer>
+
+  <!-- Inline JS is avoided; using external file instead -->
+  <script src="script.js"></script>
+</body>
+</html>
