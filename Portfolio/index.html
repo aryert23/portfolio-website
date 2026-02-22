@@ -240,6 +240,36 @@
     </div>
   </section>
 
+  <section class="grid-section" id="dom-playground">
+  <h2>DOM Practice Playground</h2>
+
+  <!-- 1️⃣ Paragraph Text Change -->
+  <div class="card">
+    <h3>Change Paragraph Text</h3>
+    <p id="demo-text">This is the original text.</p>
+    <button class="btn primary" onclick="changeText()">Change Text</button>
+  </div>
+
+  <!-- 2️⃣ Dynamic List -->
+  <div class="card">
+    <h3>Dynamic List Builder</h3>
+    <ul id="dynamic-list"></ul>
+    <div style="margin-top: 10px;">
+      <button class="btn primary" onclick="addItem()">Add Item</button>
+      <button class="btn ghost" onclick="removeItem()">Remove Last Item</button>
+    </div>
+  </div>
+
+  <!-- 4️⃣ Background Color Changer -->
+  <div class="card">
+    <h3>Change Background Color</h3>
+    <button class="btn primary" onclick="changeBg('lightblue')">Blue</button>
+    <button class="btn primary" onclick="changeBg('lightgreen')">Green</button>
+    <button class="btn primary" onclick="changeBg('#fddb92')">Original</button>
+  </div>
+
+</section>
+
   <!-- Contact / footer -->
   <footer id="contact">
     <div class="footer-inner">
